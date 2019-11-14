@@ -49,10 +49,10 @@ public class AuthorizeController {
         if (githubUser != null) {
             // 登陆成功，写入cookie和session
             request.getSession().setAttribute("user", githubUser);
-            return "redirect:index";
+            return "redirect:/";
         } else {
             // 登陆失败，重新登陆
-            return "redirect:index";
+            return "redirect:/";
         }
     }
 }
