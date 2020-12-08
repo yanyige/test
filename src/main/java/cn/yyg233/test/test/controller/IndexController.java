@@ -1,5 +1,8 @@
 package cn.yyg233.test.test.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -14,4 +17,6 @@ public class IndexController {
     public String index() {
         return "index";
     }
+
+
 }
